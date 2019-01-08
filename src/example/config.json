@@ -1,0 +1,16 @@
+{
+	"template": {
+		"html": "default/template/template.html",
+		"translateJs": "default/template/rep.js"
+	},
+	"pages": {
+		"dir": "default/pages/"
+	},
+	"site":{
+		"name":"The Web Site",
+		"nav":[
+			{"txt":"Home","url":"?page=home"},
+			{"txt":"About","url":"?page=about"}
+		]
+	}
+}
