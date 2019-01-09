@@ -1,6 +1,7 @@
 let _HTMLREPLACE_={
 	id:{
-		mainnav:drawNav
+		mainnav:drawNav,
+		noid:""
 	},
 	class:{
 		content:_PAGEDATA_.page.content
@@ -9,6 +10,7 @@ let _HTMLREPLACE_={
 		title:_PAGEDATA_.page.title+' • '+_PAGEDATA_.config.site.name,
 
 		h1:_PAGEDATA_.config.site.name,
-		h2:_PAGEDATA_.page.title
+		h2:_PAGEDATA_.page.title,
+		h3:'no h3'
 	}
 };
