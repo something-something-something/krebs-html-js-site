@@ -9,14 +9,12 @@ window.onload = async function () {
 	else {
 		pageLookup = 'home';
 	}
+	
+	//to remove ../ 
+	let cleanUrl = new URL(pageLookup, location.origin);
+	pageLookup=cleanUrl.pathname.substring(1);
 	console.log(pageLookup);
-
-
-
-
-	let u2 = new URL(pageLookup, 'https://example.com');
-	console.log(u2.pathname);
-
+	
 	let page=await getPageObj(config.pages.dir+pageLookup);
 
 	let template=await getTemplate(config.template.html);
